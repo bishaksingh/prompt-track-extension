@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AI Prompt Tracker",
+  "version": "1.0",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://claude.ai/*",
+        "https://grok.com/*",
+        "https://gemini.google.com/*",
+        "https://copilot.microsoft.com/*",
+        "https://www.perplexity.ai/*"
+      ],
+      "js": ["content.js"],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
