@@ -1,4 +1,4 @@
-# AI Prompt Tracker
+# Prompt Tracker Extension
 
 Chrome extension to track prompts from ChatGPT, Claude, Grok, Gemini and more.
 
